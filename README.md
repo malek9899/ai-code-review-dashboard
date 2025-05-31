@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+# 🤖 AI-Powered Code Review Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sophisticated web application that demonstrates AI integration in developer tools, built with modern React and TypeScript.
 
-Currently, two official plugins are available:
+![Dashboard Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=Dashboard+Preview)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+[**View Live Application →**](https://ai-code-review-dashboard.vercel.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **AI-Powered Analysis**: Mock integration with OpenAI-style API for intelligent code reviews
+- **Interactive Dashboards**: Real-time charts and visualizations with Chart.js
+- **Repository Analysis**: Detailed code quality metrics and recommendations
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Modern Architecture**: React 18 with TypeScript and professional error handling
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **Routing**: React Router v6
+- **Charts**: Chart.js with react-chartjs-2
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Deployment**: Vercel
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🏃‍♀️ Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/malek9899/ai-code-review-dashboard.git
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
